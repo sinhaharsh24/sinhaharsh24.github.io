@@ -1,38 +1,121 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background: #d477ff;
+  color: white;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+section {
+  margin: 20px;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #222;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#about {
+  text-align: left;
 }
+
+#about h2{
+  font-size: 40px;
+}
+
+#experience {
+  text-align: left;
+}
+
+#experience h2{
+  font-size: 40px;
+}
+
+#projects {
+  text-align: left;
+  padding: 40px;
+}
+
+#projects h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-left: 10px; 
+}
+
+#projects ul {
+  padding: 0; 
+  margin: 0;  
+}
+
+#projects li {
+  margin-bottom: 30px; 
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  list-style-type: none; 
+}
+
+#projects li:last-child {
+  margin-bottom: 0;
+}
+
+
+#skills {
+  text-align: center;
+  background: #ffffff; 
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#skills h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 0;
+  gap: 10px; 
+}
+
+#skills li {
+  font-size: 18px;
+  background: #d477ff; 
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
