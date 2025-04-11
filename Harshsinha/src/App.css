@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #e09efe92;
   margin: 0;
   padding: 0;
 }
@@ -40,7 +40,13 @@ footer {
 ul {
   list-style-type: none;
 }
+#contact {
+  height: 245px;
+}
 
+#contact h2{
+  font-size: 40px;
+}
 #about {
   text-align: left;
 }
@@ -117,5 +123,67 @@ ul {
   padding: 8px 15px;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 20px; 
+  margin: 5px;
+}
+
+.section {
+  flex: 1; 
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+#aircraft_images {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.url_shortner img{
+  width: 800px; 
+  height: 400px; 
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#aircraft_images img {
+  width: 400px; 
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+@media (max-width: 768px) {
+  #aircraft_images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aircraft_images img {
+    width: 100%;
+    max-width: 400px;
+    height: auto; 
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .url_shortner img{
+    width: 100%; 
+    height: auto; 
+  }
 }
 
